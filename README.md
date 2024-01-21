@@ -1,4 +1,4 @@
-# Breast Cancer W.i.s.c.o.n.s.i.n (Original) Dataset
+# Breast Cancer Wisconsin (Original) Dataset
 
 ![Breast Cancer](/Images/Front.png)
 
@@ -8,15 +8,13 @@ Welcome to the Breast Cancer dataset repository! This dataset is a renowned benc
 
 ## Dataset
 
-![Download](/Data/)
+![Download](/Data)
 
 - **Structured:** Yes
 - **Format:** Single .csv file
 - **Number of Features:** [9]
 - **Target Feature (Vector):** `class`, imbalanced, [35:65]
   ![Distribution](/Images/Distribution-of-the-classes.png)
-
-- **Duplicates:** [0]
 
 ## Breast Cancer Classification Problem Space
 
@@ -39,7 +37,7 @@ The EDA.ipynb file encapsulates the process of Exploratory Data Analysis (EDA), 
 
 ### 2. Models
 
-Developed base classification algorithms: Support Vector Machines (SVC), Logistic Regression, K-Nearest Neighbors, Decision Tree / Random Forest, Artificial Neural Networks, Ensemble.
+Developed base classification algorithms: K-Nearest Neighbors, Decision Tree and Random Forest.
 
 ### 3. Pipeline
 
