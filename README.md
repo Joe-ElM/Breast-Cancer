@@ -72,12 +72,11 @@ search_space_grid = {
     'RFC__min_samples_leaf': [2, 3, 4, 5, 6],
     'RFC__min_samples_split': [2, 3, 4, 5],
 }
-
+```
 
 #### Execution of the Pipeline:
 
 To execute this specialized pipeline, ensure the necessary Python packages are installed. Execute the provided code within the relevant environment, adjusting the pipeline or model parameters as needed. This pipeline is crafted to enhance the performance of a classification model through advanced feature engineering.
-
 
 ### 6. Model Interpretation
 
@@ -85,12 +84,12 @@ Derived insights into feature importance through model-specific methodologies, i
 
 ## Models' Performance Metrics
 
-|               | K-Nearest Neighbors    | Random Forest       |
-| :------------ | ---------------------- | ------------------- |
-| **F1 Score**  | 96.87%                 | 97.67%              |
-| **Recall**    | 98.41%                 | 100.0%              |
-| **Precision** | 95.38%                 | 95.45%              |
-| **Accuracy**  | 97.36%                 | 98.02%              |
+|               | K-Nearest Neighbors | Random Forest |
+| :------------ | ------------------- | ------------- |
+| **F1 Score**  | 96.87%              | 97.67%        |
+| **Recall**    | 98.41%              | 100.0%        |
+| **Precision** | 95.38%              | 95.45%        |
+| **Accuracy**  | 97.36%              | 98.02%        |
 
 ## Choosing the Best Model
 
@@ -114,7 +113,6 @@ An evaluation of the constructed predictive model has been conducted using vario
 
 ![Feature Importance](/Images/Features-Importance.png)
 
-
-
+```
 
 ```
