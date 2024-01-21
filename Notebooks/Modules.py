@@ -13,7 +13,7 @@ from   matplotlib.lines        import Line2D
 from   sklearn.preprocessing   import StandardScaler, OneHotEncoder, PolynomialFeatures, RobustScaler, Normalizer
 from   sklearn.svm             import SVC
 from   sklearn.impute          import SimpleImputer
-from   sklearn.model_selection import train_test_split, GridSearchCV, cross_validate                         
+from   sklearn.model_selection import train_test_split, GridSearchCV, cross_validate, validation_curve                         
 from   sklearn.pipeline        import Pipeline
 from   sklearn.metrics         import precision_score, recall_score, accuracy_score, f1_score, make_scorer
 from   sklearn.metrics         import confusion_matrix, euclidean_distances, precision_recall_curve, roc_curve, auc
@@ -25,8 +25,6 @@ from   sklearn.linear_model    import LogisticRegression
 from   sklearn.cluster         import DBSCAN, KMeans
 from   sklearn.decomposition   import PCA
 from   sklearn.exceptions      import ConvergenceWarning
-
-
 
 
 from   imblearn.over_sampling  import SMOTE, RandomOverSampler
