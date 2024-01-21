@@ -128,6 +128,39 @@ The plot aids in determining the optimal number of principal components to retai
 
 ![Scree Plot](/Images/scree-plot.png)
 
+## Feature Importance Analysis with PolynomialFeatures and PCA
+
+Explore the feature importance analysis using PolynomialFeatures and Principal Component Analysis (PCA) within the K-Nearest Neighbors (KNN) pipeline. This pipeline introduces polynomial feature expansion and dimensionality reduction to enhance the model's ability to capture complex relationships within the breast cancer dataset.
+
+### Pipeline Configuration:
+
+- **PolynomialFeatures (`poly`):**
+
+  - Degree: 2 (Quadratic feature expansion)
+  - Include Bias: False (To avoid redundant features)
+
+- **StandardScaler (`std`):**
+
+  - Standardizes numerical features for consistent scaling.
+
+- **PCA (`pca`):**
+
+  - Number of Components: 6
+  - Random State: 100
+
+- **K-Nearest Neighbors (`knn`):**
+  - Optimized parameters obtained from GridSearch_KNN.
+
+### Feature Importance Visualization:
+
+The eigenvectors matrix, representing the influence of features on principal components, is illustrated. This analysis unveils the importance of features in the first two principal components.
+
+#### Eigenvector for Principal Component 1 and 2 (pc1/pc2):
+
+![Eigenvector for pc1](/Images/PCA-eigenvectores.png)
+
+The bar plots provide a visual representation of feature importance within each principal component, aiding in understanding the contribution of individual features to the model's performance. Analyzing these eigenvectors is crucial for interpreting the impact of features on the derived principal components.
+
 ## Decision Tree Visualization for Feature Importance
 
 Explore the decision tree from a Random Forest Classifier with balanced class weights. This tree is specifically chosen for visualization to simplify the understanding of feature importance calculations.
