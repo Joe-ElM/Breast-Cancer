@@ -8,7 +8,7 @@ Welcome to the Breast Cancer dataset repository! This dataset is a renowned benc
 
 ## Dataset
 
-![Download](/Data)
+Data is available in download folder
 
 - **Structured:** Yes
 - **Format:** Single .csv file
