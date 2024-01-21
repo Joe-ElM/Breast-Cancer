@@ -113,6 +113,42 @@ An evaluation of the constructed predictive model has been conducted using vario
 
 ![Feature Importance](/Images/Features-Importance.png)
 
-```
+## Visual Exploration of Selected Features
 
-```
+Explore the distribution of selected features through box plots and histograms. The visualizations provide insights into the spread and density of each feature across different classes.
+
+![Feature Visualization](/Images/hist-boxplots-of-features.png)
+
+## Scree Plot for Principal Components
+
+The Scree plot visualizes the explained variance of each principal component obtained through Principal Component Analysis (PCA) in the K-Nearest Neighbors (KNN) pipeline. Each bar represents the proportion of variance explained by a specific principal component, helping to identify the significance of individual components in capturing the dataset's variability.
+
+- **Violet Bars:** Indicate the explained variance for each principal component.
+- **Red Line:** Represents the cumulative explained variance across principal components.
+
+The plot aids in determining the optimal number of principal components to retain, striking a balance between dimensionality reduction and preserving the dataset's information. This insightful visualization guides the decision-making process when choosing the appropriate number of principal components for subsequent model training and analysis.
+
+![Scree Plot](/Images/scree-plot.png)
+
+## Decision Tree Visualization for Feature Importance
+
+Explore the decision tree from a Random Forest Classifier with balanced class weights. This tree is specifically chosen for visualization to simplify the understanding of feature importance calculations.
+
+The RandomForestClassifier is configured with the following parameters:
+
+- Number of Estimators: 25
+- Maximum Depth: 4
+- Minimum Samples per Leaf: 2
+- Minimum Samples for Splitting Nodes: 2
+
+The decision tree is a fundamental component of the Random Forest model, and visualizing a single tree provides insights into how features are utilized for classification. Each node in the tree represents a decision based on a specific feature, contributing to the overall predictive capability of the model.
+
+The visualization includes:
+
+- **Feature Names:** Corresponding to the features in the dataset.
+- **Class Names:** Representing the target classes ('Benign' and 'Malignant').
+- **Filled Nodes:** Indicating the class distribution within each node.
+
+This visualization is valuable for understanding the decision-making process of the Random Forest model and identifying influential features in predicting breast cancer classification.
+
+![Tree Plot](/Images/Tree-0.png)
